@@ -17,6 +17,7 @@ public class Assignment01Q05 {
         queue[tail++] = i;
 
         while (head < tail) {
+            System.out.println("Queue: " + java.util.Arrays.toString(java.util.Arrays.copyOfRange(queue, head, tail)));
             int current = queue[head++];
 
             if (current == j) {
